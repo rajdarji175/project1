@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	{% load static %}
+	
+	<!-- <link rel="stylesheet" href="{% static 'app1/Home.css' %}"> -->
+	<link rel="stylesheet" href="/static/app1/login.css">
+	<link rel="stylesheet" type="text/css" href="/static/app1/Home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script type="text/javascript" src='./web/js/jquery.min.js'></script>
+
+<script type="text/javascript" src='./web/js/custom.js'></script>
+	{% block title %}<title>hello</title>{% endblock title %}
+</head>
+<body>
+	{{ data6 }}
+	<br>
+	{{ data5 }}
+	<br>
+	{% for x in data4 %}
+		{{ x.UserName }}
+		{{ x.UserEmail }}
+	{% endfor %}
+	<br>
+	{% for x in data4 %}
+		{% if x.UserName == 'Raj Darji' %}
+			{{ x.UserPassword }}
+			{{ x.UserEmail }}
+		{% endif %}
+	{% endfor %}
+
+<div class="site-header">
+	<nav>
+		<div class="logo">
+			<h1 class="animate__animated animate__pulse animate__infinite">BANNER STOCK</h1>
+		</div>
+		<div class="menu">
+			<ul>
+			<li><a href="{% url 'home' %}">Home</a></li>
+			<li><a href="prising.html">Pricing</a></li>
+			<li><a href="#">AboutUs</a></li>
+			<li><a href="{% url 'login' pk=1 %}">Login</a></li>
+			<li><a href="{% url 'register' %}">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+	{% block content %}<main>
+		<section>
+			<h3>Welcome to Banner Stock</h3>
+			<p>Get your own Designs</p>
+			<a id="tosec2" href="#sec2">
+				<div class="scrolldown">
+					<img src="./web/images/white-down-arrow-png-2.png" alt="" style="width: 47.0745px; height: 47.0745px;margin-left: -9px;">
+				</div>
+			</a>
+		</section>
+
+	</main>
+</div>
+	<section>
+		<div id="sec2">
+		<div class="sidebar fixedElement">
+			
+			<ul style="padding: 0;">
+				<li><a href="#">Designs</a></li>
+				<li><a href="javascript:void(0);" class="has-child btn">Colours<span class="menu_arrow"> ></span></a>
+					<ul class="show" style="padding: 0;">
+						<li><a href="#">Red</a></li>
+						<li><a href="#">Blue</a></li>
+						<li><a href="#">Green</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:void(0);" class="has-child btn">Festivals<span class="menu_arrow"> ></span></a>
+					<ul class="show" style="padding: 0;width: 205px;">
+						<li><a href="#">Diwali</a></li>
+						<li><a href="#">Holi</a></li>
+						<li><a href="#">15th August</a></li>
+						<li><a href="#">Navratri</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+		</div>
+		<div class="holdingcontainer">
+			<div class="innercontainerl"><img src="./web/images/153097942-shree-ganesh-chaturthi-festival-wishes-greeting-background.jpg" alt="" style="width: 199px;margin: 10px 74px 20px;"><a href="#" class="getthis">GET THIS</a></div>
+			<div class="innercontainerc"><img src="./web/images/96794-makar-sankranti-text-font-logo-for-happy-ecards.png" alt="" style="width: 345px;"><a href="#" class="getthis">GET THIS</a></div>
+			<div class="innercontainerr"><img src="./web/images/Happy-Holi-Wish-Image.jpg" alt="" style="width: 345px;"><a href="#" class="getthis">GET THIS</a></div>
+		</div>
+		<div class="holdingcontainer1">
+			<div class="innercontainerl"><img src="./web/images/96794-makar-sankranti-text-font-logo-for-happy-ecards.png" alt="" style="width: 345px;"><a href="#" class="getthis">GET THIS</a></div>
+			<div class="innercontainerc"><img src="./web/images/Happy-Holi-Wish-Image.jpg" alt="" style="width: 345px;"><a href="#" class="getthis">GET THIS</a></div>
+			<div class="innercontainerr"><img src="./web/images/153097942-shree-ganesh-chaturthi-festival-wishes-greeting-background.jpg" alt="" style="width: 199px;margin: 10px 74px 20px;"><a href="#" class="getthis">GET THIS</a></div>
+		</div>
+		<div class="holdingcontainer2">
+			<div class="innercontainerl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+		</div>
+		<div class="holdingcontainer3">
+			<div class="innercontainerl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+		</div>
+		<div class="holdingcontainer4">
+			<div class="innercontainerl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+			<div class="innercontainerr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ante non vulputate semper. Morbi malesuada ex vel auctor porttitor. Vivamus pellentesque augue at mollis aliquam. Etiam finibus eu orci vitae imperdiet. Sed eget elementum odio. Mauris nisi purus, pretium sit amet metus vel, malesuada finibus ipsum. Aenean fringilla turpis vel orci mollis cursus.</div>
+		</div>
+	</section>
+{% endblock %}
+</body>
+</html>>
+

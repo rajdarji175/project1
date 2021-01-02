@@ -1,0 +1,295 @@
+*{margin: 0;padding: 0;box-sizing:border-box;
+  font-family: 'Josefin Sans', sans-serif;}
+html {
+    scroll-behavior: smooth;
+}
+.site-header{
+	width: 100%;
+	height:100vh;
+	background: linear-gradient(60deg,#ff6600,#ff3300);
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	color: white;
+	background: rgba(0,0,0,0.2);
+	position: sticky;
+}
+
+.logo{
+	width: 50%;
+	height: 100px;
+}
+
+.logo h1{
+	line-height: 100px;
+	padding-left: 45px;
+}
+
+.menu{
+	width: 50%;
+	height: 100px;
+}
+
+.menu ul{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu li{
+	list-style: none;
+	font-size:14px;
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu a:hover{
+	cursor: pointer;
+	color: black;
+}
+
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+section h3{
+	font-size: 40px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+section p{
+	font-size: 20px;
+	text-shadow: 1px 1px 2px black;
+	color: white;
+	margin-top: 14px;
+}
+
+
+.scrolldown{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -26px;
+	margin-top: 24px;
+	cursor: pointer;
+}
+
+#sec2{
+	width: 100%;
+	/*height: 100vh;*/
+
+}
+.sidebar ul .show.show1 li a {
+    padding: 0 21px;
+}
+.sidebar{
+	width: 100%;
+	/*height: 100%;*/
+	left: 0%;
+	background: black;
+	color: white;
+	top: 0;
+}
+
+.sidebar .text{
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 65px;
+	text-align: center;
+	background-color: #1e1e1e;
+	letter-spacing: 1px;
+}
+
+.sidebar ul{
+	background: #1b1b1b;
+	/*height: 100%;*/
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.sidebar ul li{
+	line-height: 60px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	display: inline-block;
+	padding: 0 21px;
+	position: relative;
+}
+/*.sidebar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+*/
+.sidebar ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	/*padding-left: 40px;*/
+	font-weight: 500;
+	display: block;
+	width: 100%;
+	border-bottom:3px solid transparent;
+}
+
+.sidebar ul li a:hover
+{
+	color: cyan;
+	/*background: #1e1e1e;*/
+	border-bottom-color:cyan;
+}
+span.menu_arrow {
+    padding: 0 10px;
+    
+}
+
+.sidebar ul ul{
+	position: absolute;
+	display: none;
+}
+
+.sidebar ul .show.show1{
+	display: block;
+}
+
+.sidebar ul ul li{
+	line-height: 42px;
+	border-bottom: none;
+}
+
+.sidebar ul ul li a{
+	font-size: 17px;
+	color: #e6e6e6;
+	padding-left: 80px;
+}
+
+.holdingcontainer{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding: 80px;
+}
+.innercontainerl{
+	flex:1;
+	background: white;
+	transition: 1s;
+	padding:30px;
+}
+
+
+.innercontainerc{
+	flex:1;
+	background: white;
+	padding: 30px;
+}
+
+
+
+.innercontainerr{
+	flex:1;
+	background: white;
+	padding: 30px;
+}
+
+.holdingcontainer1{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding: 80px;
+}
+.holdingcontainer2{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding: 80px;
+}
+.holdingcontainer3{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding: 80px;
+}
+.holdingcontainer4{
+	width: 100%;
+	display: flex;
+	background-color: white;
+	padding: 80px;
+}
+
+.innercontainerl a{
+	text-decoration: none;
+	display:inline-block;
+	margin: 10px 10px 30px 101px;
+	border: 2px solid black;
+	color: black;
+	padding: 15px 35px;
+	border-radius: 8px;
+	font-weight: 500;
+	transition: .3s linear;
+	align-items: center;
+}
+
+.innercontainerl a:hover{
+	color: white;
+	background-color: #ff3600;
+	border: 2px solid #ff3600;
+}
+
+.innercontainerc a{
+	text-decoration: none;
+	display:inline-block;
+	margin: 10px 10px 30px 101px;
+	border: 2px solid black;
+	color: black;
+	padding: 15px 35px;
+	border-radius: 8px;
+	font-weight: 500;
+	transition: .3s linear;
+	align-items: center;
+}
+
+.innercontainerc a:hover{
+	color: white;
+	background-color: #ff3600;
+	border: 2px solid #ff3600;
+}
+
+.innercontainerr a{
+	text-decoration: none;
+	display:inline-block;
+	margin: 10px 10px 30px 101px;
+	border: 2px solid black;
+	color: black;
+	padding: 15px 35px;
+	border-radius: 8px;
+	font-weight: 500;
+	transition: .3s linear;
+	align-items: center;
+}
+
+.innercontainerr a:hover{
+	color: white;
+	background-color: #ff3600;
+	border: 2px solid #ff3600;
+}
